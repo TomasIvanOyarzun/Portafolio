@@ -26,7 +26,8 @@ const Project = () => {
             <div className={styles.container_info_details}>
               <div className={styles.images}>
                  <img src={react}></img>
-                 <img src={redux}></img>
+                  
+                  <img src={redux}></img>
                   <h2>REACT - REDUX</h2>
               </div>
               <div className={styles.details}>
@@ -41,7 +42,7 @@ const Project = () => {
                   <h2>NODE.JS</h2>
               </div>
               <div className={styles.details}>
-                 <p>for the backend use node.js (Express) to still use both javascript and types-cript</p>
+                 <p>for the backend use node.js to still use both javascript and types-cript</p>
               </div>
               <div>
                 

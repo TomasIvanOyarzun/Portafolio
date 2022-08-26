@@ -7,10 +7,10 @@ const Landing = () => {
   return (
     <div className={style.container}>
        <div className={style.sub_container}>
-           <h1>Tomas</h1>
+           <p>{`<Tomas`}</p>
           <img className={style.img} src={programmer2}></img>
           
-          <h1>Ivan Oyarzun</h1>
+          <p>{`Ivan Oyarzun/>`}</p>
        </div>
     </div>
   )
