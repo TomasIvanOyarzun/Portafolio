@@ -38,7 +38,7 @@ const Contact = () => {
             
         </form>
         <div className={style.contact}>
-           <a href='https://github.com/TomasIvanOyarzun'><img data-aos="zoom-in-up" src={git}></img></a>
+           <a href='https://github.com/TomasIvanOyarzun' rel="noreferrer" target="_blank"><img data-aos="zoom-in-up" src={git}></img></a>
            <a href='https://www.linkedin.com/in/tomas-ivan-oyarzun-148263211/' rel="noreferrer" target="_blank"><img data-aos="zoom-in-down" src={likedin}></img></a>
            <a href='https://wa.me/+5491133526366' rel="noreferrer" target="_blank"><img data-aos="zoom-in-left" src={wsp}></img></a>
         </div>
