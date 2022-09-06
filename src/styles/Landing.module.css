@@ -32,3 +32,18 @@
     width: 600px;
     height: 600px;
 }
+
+@media screen and (max-width: 960px) {
+    .container {
+        
+        font-size: 54px;
+    }
+   
+    .sub_container {
+        flex-direction: column;
+    }
+   .img {
+    width: 320px;
+    height: 320px;
+   }
+}

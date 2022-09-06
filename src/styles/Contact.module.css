@@ -83,3 +83,21 @@
     filter: none;
     transition: 1s;
 }
+
+@media screen and (max-width: 960px) {
+  
+    .form {
+        
+        width: 90%;
+       
+    
+    }
+
+    .contact img {
+    
+        width: 80px;
+        height: 80px;
+        filter: invert(0.4) sepia(1) hue-rotate(20deg) saturate(1000%) brightness(0%); 
+    }
+
+}

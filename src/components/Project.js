@@ -9,6 +9,9 @@ import react from '../image/react.png'
 import redux from '../image/redux.png'
 import postgres from '../image/postgres.png'
 
+import pokemon from '../image/1.png'
+import dog_app from '../image/2.png'
+
 const Project = () => {
 
     useEffect(()=> {
@@ -16,66 +19,47 @@ const Project = () => {
     },[])
   return (
     <div id='project' className={styles.container}>
-        <h1 style={{fontSize: '50px'}}>PROJECT DOG</h1>
-        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" className={styles.component}>
-          <div className={styles.container_img}>
-             <a href='https://pi-dogs-amber.vercel.app/' rel="noreferrer" target="_blank"><img className={styles.img} src={dog}></img></a>
-          </div>
-
-          <div className={styles.container_info}>
-            <div className={styles.container_info_details}>
-              <div className={styles.images}>
-                 <img src={react}></img>
-                  
-                  <img src={redux}></img>
-                  <h2>REACT - REDUX</h2>
-              </div>
-              <div className={styles.details}>
-                 <p>react and redux for the front-end part, although it is a simple app, the use of redux allowed me to use global states</p>
-              </div>
-              
-            </div >
-            <div className={styles.container_info_details}>
-            <div className={styles.images}>
-                 <img src={node}></img>
-                 
-                  <h2>NODE.JS</h2>
-              </div>
-              <div className={styles.details}>
-                 <p>for the backend use node.js to still use both javascript and types-cript</p>
-              </div>
-              <div>
-                
-              </div>
-            </div>
-            <div className={styles.container_info_details}>
-            <div className={styles.images}>
-                 <img src={sequelize}></img>
-                 
-                  <h2>SEQUELIZE</h2>
-              </div>
-              <div className={styles.details}>
-                 <p>The ORM I used was sequelize to manipulate my DB</p>
-              </div>
-              <div>
-                
-              </div>
-            </div>
-            <div className={styles.container_info_details}>
-            <div className={styles.images}>
-                 <img src={postgres}></img>
-                 
-                  <h2>POSTGRES-SQL</h2>
-              </div>
-              <div className={styles.details}>
-                 <p>I chose postgres to manage my database, since I needed one that is relational</p>
-              </div>
-              <div>
-                
-              </div>
-            </div>
-          </div>
-       </div>
+        <h1 style={{fontSize: '50px'}}>PROJECTs</h1>
+       
+        <div style={{background: 'rgb(140, 139, 139)' , width: '80%', height: '80%'}} data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" className={styles.container_mobil}  id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active ">
+      <img className={styles.img_carrusel} src={pokemon}  alt="..."/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 >First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div className="carousel-item  ">
+      <img className={styles.img_carrusel}   src={dog_app}   alt="..."/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." alt="..."/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+       
     </div>
   )
 }

@@ -23,7 +23,7 @@ const About = () => {
     <div id='about' className={style.container}>
       <div style={{height: '10%' , marginTop: '50px'}}><h1>ABOUT ME</h1></div>
       <div className={style.container_one}>
-        <div style={{width: '30%', height: '100%'}}>
+        <div >
           <img src={black} className={style.img}></img>
         </div>
 
