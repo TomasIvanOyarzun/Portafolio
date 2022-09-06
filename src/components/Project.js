@@ -1,13 +1,9 @@
 import React, { useEffect } from 'react'
 import styles from '../styles/Project.module.css'
-import dog from '../image/dog.png'
+
 import AOS from 'aos'
 import 'aos/dist/aos.css';
-import node from '../image/node.png'
-import sequelize from '../image/sequelize.png'
-import react from '../image/react.png'
-import redux from '../image/redux.png'
-import postgres from '../image/postgres.png'
+
 
 import pokemon from '../image/1.png'
 import dog_app from '../image/2.png'
