@@ -11,7 +11,8 @@ const Landing = () => {
             <h2>{`<Tomas Ivan`}</h2>
             <h2>{` Oyarzun  />`}</h2>
             <h2 className={`${style.parpadea} ${style.text}`} >|</h2>
-            <div style={{width: '30%' , height:'4px', background: 'rgb(247, 185, 71)'}}></div><div>
+            <div style={{width: '30%' , height:'4px', background: 'rgb(247, 185, 71)'}}></div>
+            <div className={style.contact_}>
               <p><a className={style.likedin}>likedin</a>{' | '} <a className={style.likedin}>github</a></p>
               <a href='#contact'><button>contact me</button></a>
             </div>

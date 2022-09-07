@@ -11,7 +11,7 @@
    
     background: rgb(19, 19, 19);
    z-index: 4;
-
+  
 }
 
 .div_nav {
@@ -116,6 +116,11 @@ a{
     
     display: block;
     margin-right: 20px;
+}
+html,
+body{
+width:100%;
+overflow-x:hidden;
 }
 
 }
