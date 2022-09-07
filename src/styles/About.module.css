@@ -27,6 +27,7 @@
 .container_one img {
     width: '30%';
      height: '100%';
+    
 }
 
 
@@ -36,7 +37,8 @@
     justify-content: space-around;
     width: 50%;
     height: 50%;
-    
+    margin-top: 40px;
+   
     padding-bottom: 40px;
    
 }
@@ -47,6 +49,7 @@
     border-radius: 50%;
     width: 180px;
     height: 180px;
+    
 }
 
 .containers {
@@ -56,9 +59,10 @@
     width: 100%;
     height: 15%;
     border-radius:12px;
-    background:  #ff0099;
-    background: -webkit-linear-gradient(to right, #ff0099, #493240);
-    background: linear-gradient(to right, #ff0099, #493240);
+    background: #1F1C2C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #928DAB, #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 
     
 }
@@ -66,10 +70,10 @@
 .container_name {
     display: flex;
     justify-content: center;
-    width: 33%;
+    width: 53%;
     height: 100%;
     color: white;
-    
+    margin-top: 20px;
    
 }
 
@@ -77,8 +81,9 @@
     font-size: 22px;
 }
 .containers img {
-    width: 100px;
+    width: 90px;
     height: 50px;
+   filter: grayscale(100%);
     
 }
 

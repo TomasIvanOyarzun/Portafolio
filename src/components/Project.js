@@ -15,7 +15,8 @@ const Project = () => {
     },[])
   return (
     <div id='project' className={styles.container}>
-        <h1 style={{fontSize: '50px'}}>PROJECTs</h1>
+        <h1 style={{fontSize: '50px', marginTop: '40px'}}>PROJECTs</h1>
+        <div style={{width: '14%' , height:'4px', background: 'rgb(247, 185, 71)', marginBottom: '30px'}}></div>
        
         <div style={{background: 'rgb(140, 139, 139)' , width: '80%', height: '80%'}} data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" className={styles.container_mobil}  id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
   <div class="carousel-indicators">

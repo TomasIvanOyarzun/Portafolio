@@ -21,7 +21,8 @@ const About = () => {
       },[])
   return (
     <div id='about' className={style.container}>
-      <div style={{height: '10%' , marginTop: '50px'}}><h1>ABOUT ME</h1></div>
+      <div style={{height: '10%' , marginTop: '80px'}}><h1>ABOUT ME</h1></div>
+      <div style={{width: '14%' , height:'4px', background: 'rgb(247, 185, 71)'}}></div>
       <div className={style.container_one}>
         <div >
           <img src={black} className={style.img}></img>

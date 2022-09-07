@@ -27,7 +27,25 @@ const Contact = () => {
     }
   return (
     <div id='contact' className={style.container}>
-        <h1 >CONTACT</h1>
+       <h1>CONTACT</h1>
+       <div style={{width: '11%' , height:'4px', background: 'rgb(247, 185, 71)', marginBottom: '20px'}}></div>
+       <div className={style.sub_container}>
+       <div className={style.sub_container_one_v2}>
+        <div className={style.sub_container_one}>
+          
+            <h2>Contact</h2>
+            <h2>Me:</h2>
+            <p>In the event that you are looking for people for any type of project, considering my skills, do not hesitate to contact me, I still have a lot to learn, but you learn along the way.</p>
+              
+           <div className={style.contact}>
+           <div><a href='https://github.com/TomasIvanOyarzun' rel="noreferrer" target="_blank"><img data-aos="zoom-in-up" src={git}></img></a></div>
+           <div><a href='https://www.linkedin.com/in/tomas-ivan-oyarzun-148263211/' rel="noreferrer" target="_blank"><img data-aos="zoom-in-down" src={likedin}></img></a></div>
+           <div><a href='https://wa.me/+5491133526366' rel="noreferrer" target="_blank"><img data-aos="zoom-in-left" src={wsp}></img></a></div>
+           </div>
+          <button className={style.button_cv}>Download CV</button>
+        </div>
+        </div>
+        <div className={style.sub_container_two}>
         <form ref={referencia} onSubmit={sendEmail} data-aos="fade-up"
      data-aos-anchor-placement="bottom-bottom" className={style.form}>
             
@@ -37,12 +55,8 @@ const Contact = () => {
             <input className={style.button} type='submit' value='send'></input>
             
         </form>
-        <div className={style.contact}>
-           <a href='https://github.com/TomasIvanOyarzun' rel="noreferrer" target="_blank"><img data-aos="zoom-in-up" src={git}></img></a>
-           <a href='https://www.linkedin.com/in/tomas-ivan-oyarzun-148263211/' rel="noreferrer" target="_blank"><img data-aos="zoom-in-down" src={likedin}></img></a>
-           <a href='https://wa.me/+5491133526366' rel="noreferrer" target="_blank"><img data-aos="zoom-in-left" src={wsp}></img></a>
         </div>
-     
+        </div>
     </div>
   )
 }
