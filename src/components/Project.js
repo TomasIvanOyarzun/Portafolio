@@ -19,41 +19,37 @@ const Project = () => {
         <div style={{width: '14%' , height:'4px', background: 'rgb(247, 185, 71)', marginBottom: '30px'}}></div>
        
         <div  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" className={styles.container_mobil}  id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-  <div  class="carousel-indicators">
+  <div  className="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active ">
+  <div className="carousel-inner">
+    <div className="carousel-item active ">
       <img className={styles.img_carrusel} src={pokemon}  alt="..."/>
-      <div class="carousel-caption d-none d-md-block">
-        <h5 >First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+      <div className="carousel-caption d-none d-md-block">
       </div>
     </div>
     <div className="carousel-item  ">
       <img className={styles.img_carrusel}   src={dog_app}   alt="..."/>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+      <div className="carousel-caption d-none d-md-block">
+        
       </div>
     </div>
-    <div class="carousel-item">
+    <div className="carousel-item">
       <img src="..." alt="..."/>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+      <div className="carousel-caption d-none d-md-block">
+       
       </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
   </button>
 </div>
        

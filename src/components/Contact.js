@@ -35,7 +35,7 @@ const Contact = () => {
           
             <h2>Contact</h2>
             <h2>Me:</h2>
-            <p>In the event that you are looking for people for any type of project, considering my skills, do not hesitate to contact me, I still have a lot to learn, but you learn along the way.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.” The purpose of lorem ipsum is</p>
               
            <div className={style.contact}>
            <div><a href='https://github.com/TomasIvanOyarzun' rel="noreferrer" target="_blank"><img data-aos="zoom-in-up" src={git}></img></a></div>
