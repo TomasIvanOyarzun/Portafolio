@@ -55,7 +55,7 @@ const Contact = () => {
       </Button>
            
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal style={{zIndex: '999999999'}} show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Gracías por Interesarse en mi Perfil</Modal.Title>
         </Modal.Header>
