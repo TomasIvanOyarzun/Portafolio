@@ -30,9 +30,9 @@ const About = () => {
 
         <div style={{width: '70%'}}>
        
-         <p className={style.div_p} data-aos="flip-left" style={{fontSize: '20px'}}>I am a Full-Stack JS Web developer, I keep learning new technologies,
-             I really like both the Front-End and the Back-End, every day I learn
-              something new, which helps me in my development as a programmer</p>
+         <p className={style.div_p} data-aos="flip-left" >Soy desarrollador web Full-Stack JS, sigo aprendiendo nuevas tecnologías,
+             Me gusta mucho  el Front-End como el Back-End, cada día aprendo
+              algo nuevo, para que me ayude en mi desarrollo como programador</p>
         </div>
       </div>
 

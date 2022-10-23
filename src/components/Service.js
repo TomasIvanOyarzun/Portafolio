@@ -5,24 +5,25 @@ import ideas from '../image/ideas.png'
 import dev from '../image/desarrollo.png'
 const Service = () => {
   return (
-    <div className={style.container}>
+    <div id='service' className={style.container}>
         <h2>Service</h2>
         <div style={{width: '10%' , height:'4px', background: 'rgb(247, 185, 71)'}}></div>
       <div className={style.sub_div}>
          <div>
             <img src={soluciones} alt='diamond-icon'></img>
             <p>Desing</p>
-            <span>Adaptation of the design according to what is requested, and learning during development</span>
+            <span>Adaptación del diseño según lo solicitado, y aprendizaje durante el desarrollo</span>
          </div>
          <div>
             <img src={ideas} alt='idea-icon'></img>
             <p>Ideas</p>
-            <span>Ability to create many ideas and strategies in order to have a better project development</span>
+            <span>Habilidad para crear muchas ideas y estrategias para tener un mejor desarrollo del proyecto.</span>
          </div>
          <div>
             <img src={dev} alt='dev-icon'></img>
             <p>Web Development</p>
-            <span></span>
+           
+            <span>Habilidad desarrollo web de flujo completo</span>
          </div>
       </div>
     </div>
