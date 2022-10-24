@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: black;
-   
+    font-family: 'Ubuntu', sans-serif;
     
    
 }
@@ -19,13 +19,15 @@
 
 
 .sub_container {
-    
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    width: 90%;
-    height: 90%;
+    align-items: flex-start;
+    
+   
+    
+   
     
 }
 
@@ -41,34 +43,47 @@
 .sub_container h2 {
     font-size: 120px;
     color : rgb(255, 255, 255);
+    line-height: 115px;
+    padding: 0;
+    margin: 0;
 }
 
 .sub_container h3 {
     font-size: 40px;
     font-weight: 100;
     color : rgb(247, 185, 71);
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
 }
 
+.sub_container h5 {
+  font-size: 35px;
+   padding: 0;
+    margin: 0;
+    line-height: 40px;
+    color : rgb(255, 255, 255);
+}
 .img {
     width: 600px;
     height: 600px;
 }
 
 .text {
-    position: relative;
-    top: -20%;
-    left: 17.5%;
+    position: absolute;
+    top: 6%;
+    left: 58.5%;
     font-size:38px;
     font-family:helvetica;
     font-weight:bold;
-    color:#b0b0b0;
+  
     text-transform:uppercase;
     display: inline;    
     
   }
   .parpadea {
 
-    
+   
     animation-name: parpadeo;
     animation-duration: 1s;
     animation-timing-function: linear;
@@ -104,7 +119,12 @@
     }
    
     .sub_container {
-        flex-direction: column;
+     
+     
+      width: 90%;
+      height: 50%;
+       
+        justify-content: center;
     }
    .img {
     width: 320px;
@@ -113,18 +133,24 @@
 
    .sub_container h2 {
     font-size: 50px;
-   
-}
+    line-height: normal;
+     }
 
 .sub_container h3 {
     font-size: 25px;
-    
+    line-height: normal;
+
+}
+
+.sub_container h5 {
+  font-size: 20px;
+  line-height: normal;
 
 }
 .text {
-    position: relative;
-    top: -10%;
-    left: 36%;
+    position: absolute;
+    top: 20%;
+    left: 52%;
     font-size:38px;
       
     

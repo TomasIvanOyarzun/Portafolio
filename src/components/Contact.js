@@ -45,9 +45,9 @@ const Contact = () => {
             <p>En este momento estoy buscando un trabajo de Programador Jr, puedes contactarme a través de mis diferentes redes o también si lo deseas puedes enviarme un correo</p>
               
            <div className={style.contact}>
-           <div><a href='https://github.com/TomasIvanOyarzun' rel="noreferrer" target="_blank"><img data-aos="zoom-in-up" src={git}></img></a></div>
-           <div><a href='https://www.linkedin.com/in/tomas-ivan-oyarzun-148263211/' rel="noreferrer" target="_blank"><img data-aos="zoom-in-down" src={likedin}></img></a></div>
-           <div><a href='https://wa.me/+5491133526366' rel="noreferrer" target="_blank"><img data-aos="zoom-in-left" src={wsp}></img></a></div>
+           <div><a href='https://github.com/TomasIvanOyarzun' rel="noreferrer" target="_blank"><img data-aos="zoom-in-up" src={git} alt='github_logo'></img> </a></div>
+           <div><a href='https://www.linkedin.com/in/tomas-ivan-oyarzun-148263211/' rel="noreferrer" target="_blank"><img data-aos="zoom-in-down" src={likedin} alt='likedin_logo'></img></a></div>
+           <div><a href='https://wa.me/+5491133526366' rel="noreferrer" target="_blank"><img data-aos="zoom-in-left" src={wsp} alt='whatsapp_logo'></img></a></div>
            </div>
            
            <Button variant="primary" onClick={handleShow}>
@@ -74,15 +74,7 @@ const Contact = () => {
         
         </div>
         <div className={style.sub_container_two}>
-        {/* <form ref={referencia} onSubmit={sendEmail} data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" className={style.form}>
-            
-            <input style={{ marginTop: '80px',marginBottom: '20px', height: '7%'}} type='text' placeholder='Name' name='user_name'></input>
-            <input style={{marginBottom: '50px', height: '7%'}} type='text' placeholder='Email' name='user_email'></input>
-            <textarea style={{marginBottom: '30px', height: '20%', width: '80%'}} placeholder='message' name='user_message'></textarea>
-            <input className={style.button} type='submit' value='send'></input>
-            
-        </form> */}
+      
           <div className={style.sub_div_form}>
        <Form class='w-100' ref={referencia} onSubmit={sendEmail} data-aos="fade-up"
      data-aos-anchor-placement="bottom-bottom">

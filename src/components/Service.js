@@ -12,7 +12,7 @@ const Service = () => {
          <div>
             <img src={soluciones} alt='diamond-icon'></img>
             <p>Desing</p>
-            <span>Adaptación del diseño según lo solicitado, y aprendizaje durante el desarrollo</span>
+            <span>Adaptación del diseño según lo solicitado, mejoras y aprendizaje durante el desarrollo del mismo.</span>
          </div>
          <div>
             <img src={ideas} alt='idea-icon'></img>
@@ -23,7 +23,7 @@ const Service = () => {
             <img src={dev} alt='dev-icon'></img>
             <p>Web Development</p>
            
-            <span>Habilidad desarrollo web de flujo completo</span>
+            <span>Habilidad desarrollo web de flujo completo, capacidad de aprender nuevas tecnologías solicitadas. </span>
          </div>
       </div>
     </div>
