@@ -34,9 +34,9 @@ const SliderCard = () => {
   return (
     <div>
       <Carousel responsive={responsive} infinite={true} autoPlaySpeed={1000}>
-         {arrayCard.map(el => {
+         {arrayCard.map((el,index) => {
             return (
-                <Card title={el.title}
+                <Card key={index} title={el.title}
                  image= {el.image}
                  description = {el.description}
                 
