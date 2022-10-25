@@ -6,9 +6,9 @@ import portafolio from '../../image/portafolio.jpg'
 import cellStore from '../../image/cellStore.jpg'
 import pokemon from '../../image/pokemonApp.jpg'
 import dog from '../../image/dog.jpg'
-const arrayCard = [{title: 'Portafolio', image: portafolio, description : 'Portafolio personal de programador, React, Bootstrap'  },
+const arrayCard = [{title: 'Portafolio', image: portafolio, description : 'Portafolio personal de programador, React, Bootstrap components, deployado en Netlify'  },
 {title: 'CellStore', image: cellStore, description : 'Proyecto grupal , ecommerce celulares, react, react-redux, mongoose, mongoDB, express, JWT, etc'},
-{title:'Pokemon APP', image: pokemon, description: 'app pokemon parecido a un pokedex , buscar pokemones, react , express, sequelize, postgres  (no se uso librerias de estilos)'},
+{title:'Pokemon APP', image: pokemon, description: 'pokedex , buscar pokemones, react , express, sequelize, postgres  (no se uso librerias de estilos)'},
 {title: 'Dog APP', image: dog, description : 'buscar razas de perro , react, react-redux, react-router-dom, sequelize, express, (no se uso librerias de estilos)'}]
 
 const SliderCard = () => {
