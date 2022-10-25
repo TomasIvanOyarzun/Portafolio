@@ -86,14 +86,14 @@ const Contact = () => {
         <Modal.Header closeButton>
           <Modal.Title>Gracías por Interesarse en mi Perfil</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Proximamente estare subiendo un archivo en la nube del CV</Modal.Body>
+        <Modal.Body>Ver en el siguiente enlace</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Cerrar
           </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Descargar
-          </Button>
+          <a href='https://drive.google.com/file/d/1Z9aa4ZEj2bb_rhA86bgMMlDnzKj4pw4j/view' rel="noreferrer" target="_blank"><Button variant="primary" onClick={handleClose}>
+            Ver
+          </Button></a>
         </Modal.Footer>
       </Modal>
      
