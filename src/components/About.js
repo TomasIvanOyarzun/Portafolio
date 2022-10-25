@@ -13,14 +13,17 @@ import html from '../image/html.png'
 import js from '../image/js.png'
 import css from '../image/css.png'
 import typeScript from '../image/typeScript.png'
+import { useContext } from 'react';
+import SwitchContext from '../context/SwitchContext';
 const About = () => {
     
+  const {active , theme} = useContext(SwitchContext)
     useEffect(()=> {
         AOS.init()
       
       },[])
   return (
-    <div id='about' className={style.container}>
+    <div id='about' className={style.container} style={{background: active && theme.about}}>
       <div style={{height: '10%' , marginTop: '80px'}}><h1>ABOUT ME</h1></div>
       <div style={{width: '14%' , height:'4px', background: 'rgb(247, 185, 71)'}}></div>
       <div className={style.container_one}>

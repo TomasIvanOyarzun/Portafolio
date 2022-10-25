@@ -43,7 +43,7 @@ const SliderCard = () => {
                 />
             )
          })}
-     </Carousel>;
+     </Carousel>
     </div>
   )
 }

@@ -8,33 +8,60 @@ import wsp from '../image/WhatsApp_icon.png'
 import emailjs from '@emailjs/browser'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import Toast from 'react-bootstrap/Toast';
 
 import Form from 'react-bootstrap/Form';
+import { useContext } from 'react';
+import SwitchContext from '../context/SwitchContext';
 
 const Contact = () => {
+  const [msg, setMsg] = useState(false);
   const [show, setShow] = useState(false);
-
+ const {theme, active} = useContext(SwitchContext)
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const referencia = useRef()
+  
+  const [input, setInput] = useState({
+    user_name : '',
+    user_email : '',
+    user_message: ''
 
+  })
     useEffect(()=>{
      AOS.init()
     },[])
-
-
+  
+    const handleOnClick = (evt) => {
+      setInput({
+        ...input,
+        [evt.target.name] : evt.target.value
+      })
+    }
     const sendEmail =  async (event) => {
        event.preventDefault()
-
+       
       try {
+        setInput({
+          user_name : '',
+          user_email : '',
+          user_message: ''
+      
+        })
         await emailjs.sendForm('service_i1yk571', 'template_ed7ajqt', event.target, 'pn-mqcZK_Admgj3vT')
-         referencia.current.reset()
+       
       } catch (error) {
         console.log(error)
       }
     }
+    
+  console.log(input)
   return (
-    <div id='contact' className={style.container}>
+    <>
+    
+    
+    <div id='contact' className={style.container} style={{background: active && theme.contact}}>
+    
        <h1>CONTACT</h1>
        <div style={{width: '11%' , height:'4px', background: 'rgb(247, 185, 71)', marginBottom: '20px'}}></div>
        <div className={style.sub_container}>
@@ -80,7 +107,7 @@ const Contact = () => {
      data-aos-anchor-placement="bottom-bottom">
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Nombre</Form.Label>
-        <Form.Control type='text' placeholder='Su nombre' name='user_name' />
+        <Form.Control type='text' placeholder='Su nombre' name='user_name' onChange={handleOnClick} value={input.user_name} />
         <Form.Text className="text-muted">
          Ingrese su nombre completo.
         </Form.Text>
@@ -88,25 +115,47 @@ const Contact = () => {
 
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email</Form.Label>
-        <Form.Control type='text' placeholder='Su email'  name='user_email' />
+        <Form.Control type='text' placeholder='Su email'  name='user_email' onChange={handleOnClick} value={input.user_email} />
         <Form.Text className="text-muted">
           verifique que este bién escríto, gracías.
         </Form.Text>
+        
       </Form.Group>
 
 
 
-      <textarea style={{marginBottom: '30px', height: '20%', width: '100%'}} placeholder='message' name='user_message'></textarea>
+      <textarea style={{marginBottom: '30px', height: '20%', width: '100%'}} placeholder='message' name='user_message' onChange={handleOnClick} value={input.user_message}></textarea>
 
       
-      <Button variant="primary" type="submit" class='w-100' >
+      <Button disabled={Object.values(input).join('').length === 0 ? true : false} onClick={() => setMsg(true)} variant="primary" type="submit" class='w-100' >
         Enviar
       </Button>
     </Form>
+ 
      </div>
         </div>
         </div>
+
+       
+        <div className={style.msg_toast}>
+    <Toast bg='success' onClose={() => setMsg(false)} show={msg} delay={5000} autohide>
+       <Toast.Header>
+         <img
+           src="holder.js/20x20?text=%20"
+           className="rounded me-2"
+           alt=""
+         />
+         <strong className="me-auto">Correo Enviado</strong>
+         <small>11 mins ago</small>
+       </Toast.Header>
+       <Toast.Body>Gracias , estare contestando a la brevedad</Toast.Body>
+     </Toast>
     </div>
+       
+    
+   
+    </div>
+    </>
   )
 }
 

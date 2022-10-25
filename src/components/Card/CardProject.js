@@ -1,10 +1,14 @@
 import React from 'react'
+import { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import SwitchContext from '../../context/SwitchContext';
 
 const CardProject = ({title, image, description}) => {
+
+  const {active , theme} = useContext(SwitchContext)
   return (
-    <Card style={{ width: '18rem' }} data-aos="flip-left" >
+    <Card style={{ width: '18rem' }} data-aos="flip-left" bg={active && theme.card}>
       <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>

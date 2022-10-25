@@ -77,6 +77,13 @@
 
 }
 
+.msg_toast {
+    display: flex;
+  
+    
+    bottom:0%;
+   
+}
 
 .form input[type='text'] {
     width: 80%;

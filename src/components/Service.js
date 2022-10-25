@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import style from '../styles/Service.module.css'
 import soluciones from '../image/soluciones.png'
 import ideas from '../image/ideas.png'
 import dev from '../image/desarrollo.png'
+import SwitchContext from '../context/SwitchContext'
 const Service = () => {
+
+   const {active, theme} = useContext(SwitchContext)
   return (
-    <div id='service' className={style.container}>
+    <div id='service' className={style.container} style={{background: active && theme.service}}>
         <h2>Service</h2>
         <div style={{width: '10%' , height:'4px', background: 'rgb(247, 185, 71)'}}></div>
       <div className={style.sub_div}>

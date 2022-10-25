@@ -9,16 +9,20 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useContext } from 'react';
+import SwitchContext from '../context/SwitchContext';
+
 
 
 const NavB = () => {
   const [click, setClick] = useState(false)
-
+  const {active, handleOnClick, theme} = useContext(SwitchContext)
+   console.log(theme)
   return (
   
 
    <div className={style.nav}>
-    <Navbar  bg="light" expand="lg">
+    <Navbar  bg={active ? 'dark' : 'light'} expand="lg" variant={active && 'dark'}>
     <Container fluid>
       <Navbar.Brand href="#">Tomas Oyarzun</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
@@ -40,9 +44,24 @@ const NavB = () => {
               Projects
             </NavDropdown.Item>
           </NavDropdown>
-         
+          
+      
         </Nav>
-       
+        <Nav>
+           
+            <Form>
+            <Form.Check
+            isValid={true}
+        type="switch"
+        id="custom-switch"
+        label="DarkMode"
+        onClick={handleOnClick}
+        color='light'
+      />
+    
+    </Form>
+           
+          </Nav>
       </Navbar.Collapse>
     </Container>
   </Navbar>
