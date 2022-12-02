@@ -43,7 +43,9 @@ const NavB = () => {
             <NavDropdown.Item href="#project">
               Projects
             </NavDropdown.Item>
+          
           </NavDropdown>
+          <Nav.Link href="#contact">{'oyarzuntomas99@gmail.com'.toLowerCase()}</Nav.Link>
           
       
         </Nav>
