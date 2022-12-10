@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import style from '../styles/About.module.css'
-import black from '../image/black.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import node from '../image/node.png'
@@ -15,6 +14,7 @@ import css from '../image/css.png'
 import typeScript from '../image/typeScript.png'
 import { useContext } from 'react';
 import SwitchContext from '../context/SwitchContext';
+import face from '../image/face.jpg'
 const About = () => {
     
   const {active , theme} = useContext(SwitchContext)
@@ -28,7 +28,7 @@ const About = () => {
       <div style={{width: '14%' , height:'4px', background: 'rgb(247, 185, 71)'}}></div>
       <div className={style.container_one}>
         <div >
-          <img src={black} className={style.img}></img>
+          <img src={face} className={style.img}></img>
         </div>
 
         <div style={{width: '70%'}}>

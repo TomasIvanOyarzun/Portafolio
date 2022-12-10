@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import SwitchContext from '../../context/SwitchContext';
 
-const CardProject = ({title, image, description}) => {
+const CardProject = ({title, image, description, link}) => {
 
   const {active , theme} = useContext(SwitchContext)
   return (
@@ -15,7 +15,7 @@ const CardProject = ({title, image, description}) => {
         <Card.Text>
           <div><p>{description}</p></div>
         </Card.Text>
-        <Button variant="primary">Ingresar</Button>
+        <Button variant="primary" onClick={()=> window.open(`${link}`, '_blank')} >Ingresar</Button>
       </Card.Body>
     </Card>
   )

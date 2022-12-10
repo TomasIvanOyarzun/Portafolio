@@ -14,7 +14,7 @@ const Service = () => {
       <div className={style.sub_div}>
          <div>
             <img src={soluciones} alt='diamond-icon'></img>
-            <p>Desing</p>
+            <p>Design</p>
             <span>Adaptación del diseño según lo solicitado, mejoras y aprendizaje durante el desarrollo del mismo.</span>
          </div>
          <div>
