@@ -14,7 +14,7 @@ import css from '../image/css.png'
 import typeScript from '../image/typeScript.png'
 import { useContext } from 'react';
 import SwitchContext from '../context/SwitchContext';
-import face from '../image/face.jpg'
+import face from '../image/face.png'
 const About = () => {
     
   const {active , theme} = useContext(SwitchContext)
