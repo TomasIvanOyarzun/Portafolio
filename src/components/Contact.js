@@ -103,8 +103,8 @@ const Contact = () => {
         <div className={style.sub_container_two}>
       
           <div className={style.sub_div_form}>
-       <Form class='w-100' ref={referencia} onSubmit={sendEmail} data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">
+       <Form class='w-100' ref={referencia} onSubmit={sendEmail}>
+
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Nombre</Form.Label>
         <Form.Control type='text' placeholder='Su nombre' name='user_name' onChange={handleOnClick} value={input.user_name} />
@@ -128,7 +128,7 @@ const Contact = () => {
 
       
       <Button disabled={Object.values(input).join('').length === 0 ? true : false} onClick={() => setMsg(true)} variant="primary" type="submit" class='w-100' >
-        Enviar
+        Enviarme Correo
       </Button>
     </Form>
  
