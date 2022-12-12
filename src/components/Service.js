@@ -4,14 +4,21 @@ import soluciones from '../image/soluciones.png'
 import ideas from '../image/ideas.png'
 import dev from '../image/desarrollo.png'
 import SwitchContext from '../context/SwitchContext'
+import AOS from 'aos'
 const Service = () => {
 
    const {active, theme} = useContext(SwitchContext)
+
+   React.useEffect(()=> {
+      AOS.init()
+    
+    },[])
+
   return (
-    <div id='service' className={style.container} style={{background: active && theme.service}}>
+    <div id='service'  className={style.container} style={{background: active && theme.service}}>
         <h2>Service</h2>
         <div style={{width: '10%' , height:'4px', background: 'rgb(247, 185, 71)'}}></div>
-      <div className={style.sub_div}>
+      <div data-aos="flip-left" className={style.sub_div}>
          <div>
             <img src={soluciones} alt='diamond-icon'></img>
             <p>Design</p>
