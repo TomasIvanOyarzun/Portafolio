@@ -5,6 +5,7 @@ localStorage.setItem('true', true)
 
 const SwitchContext = createContext()
 const initialState = JSON.parse(localStorage.getItem('bg'))
+
  export const SwitchProvider = ({children}) => {
     const theme = {
         about: '#525252',
@@ -22,13 +23,9 @@ const initialState = JSON.parse(localStorage.getItem('bg'))
        
     }
     
-    if(active) {
-        const trueLC = JSON.parse(localStorage.getItem('true'))
-        localStorage.setItem('bg', JSON.stringify(trueLC)) 
-    } else {
-        const falseLC = JSON.parse(localStorage.getItem('false'))
-        localStorage.setItem('bg', JSON.stringify(falseLC))  
-    }
+   
+        localStorage.setItem('bg', JSON.stringify(active))  
+   
     
     const data = {active, handleOnClick, theme}
     return <SwitchContext.Provider value={data}>{children}</SwitchContext.Provider>
