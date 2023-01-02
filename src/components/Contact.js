@@ -77,7 +77,7 @@ const Contact = () => {
            <div><a href='https://wa.me/+5491133526366' rel="noreferrer" target="_blank"><img data-aos="zoom-in-left" src={wsp} alt='whatsapp_logo'></img></a></div>
            </div>
            
-           <Button variant="primary" onClick={handleShow}>
+           <Button style={{background : '#E7BA13', border : 0}} variant="primary" onClick={handleShow}>
         Descargar mi CV
       </Button>
            
@@ -127,7 +127,7 @@ const Contact = () => {
       <textarea style={{marginBottom: '30px', height: '20%', width: '100%'}} placeholder='message' name='user_message' onChange={handleOnClick} value={input.user_message}></textarea>
 
       
-      <Button disabled={Object.values(input).join('').length === 0 ? true : false} onClick={() => setMsg(true)} variant="primary" type="submit" class='w-100' >
+      <Button  disabled={Object.values(input).join('').length === 0 ? true : false} onClick={() => setMsg(true)} variant="primary" type="submit" class='w-100' >
         Enviarme Correo
       </Button>
     </Form>

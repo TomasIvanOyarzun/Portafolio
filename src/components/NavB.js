@@ -58,7 +58,9 @@ const NavB = () => {
             <Form>
             <Form.Check
             isValid={true}
+            
         type="switch"
+        checked={active ? true : false}
         id="custom-switch"
         label="DarkMode"
         onClick={handleOnClick}
