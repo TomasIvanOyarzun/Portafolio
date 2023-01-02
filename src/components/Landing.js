@@ -6,11 +6,12 @@ import Three from './three/Three'
 
 
 const Landing = () => {
- 
+    const dispositivo = navigator.userAgent || navigator.vendor || window.opera;
+    console.log(dispositivo)
   return (
     <div id='inicio' className={style.container}>
-      
-         <Three/>
+       { !/android/i.test(dispositivo) &&  <Three />}
+         
        <div className={style.sub_container}>
        
             <h5>Hola mi nombre es</h5>
