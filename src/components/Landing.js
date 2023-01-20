@@ -17,7 +17,11 @@ const Landing = () => {
             <h5>Hola mi nombre es</h5>
             <h2 style={{color: 'rgb(233, 48, 48)'}}>{`<Tomas Oyarzun/>`}</h2> 
             
-            <h2>Soy un Full-Stack Developer</h2> 
+            <div>
+            <h2 className={style.escribiendo}>Soy
+Full Stack Developer
+</h2> 
+            </div>
             
            
        </div>

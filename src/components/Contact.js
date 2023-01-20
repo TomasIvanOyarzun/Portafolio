@@ -69,7 +69,7 @@ const Contact = () => {
         <div className={style.sub_container_one}>
           
            
-            <p>En este momento estoy buscando un trabajo de Programador, puedes contactarme a través de mis diferentes redes o también si lo deseas puedes enviarme un correo</p>
+            <p>En este momento estoy buscando un trabajo de Programador, puedes contactarme a través de mis diferentes redes o también si lo deseas puedes enviarme un correo.</p>
               
            <div className={style.contact}>
            <div><a href='https://github.com/TomasIvanOyarzun' rel="noreferrer" target="_blank"><img data-aos="zoom-in-up" src={git} alt='github_logo'></img> </a></div>

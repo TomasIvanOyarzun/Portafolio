@@ -17,14 +17,7 @@ const Three = () => {
     <Box/>
     <hemisphereLight intensity={0} color={'#000'}  />
     <Sparkles count={200} scale={[20,20,10]} size={1} speed={0.01}/>
-    <fog attach={'fog'} args={['#202030',5,25]}/>
-    <Cloud
-    opacity = {0.1}
-    speed={0.1}
-    width={30}
-    depth={0.1}
-    segments={40}
-    />
+  
 
     <Effects disableGamma>
       <unrealBloomPass threshold={1} strength={2} radius={2.0} />
