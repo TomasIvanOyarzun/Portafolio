@@ -13,7 +13,7 @@ const CardProject = ({title, image, description, link}) => {
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>
-          <div><p>{description}</p></div>
+          <div><p >{description}</p></div>
         </Card.Text>
         <Button style={{background : '#E7BA13', border : 0}} variant="primary" onClick={()=> window.open(`${link}`, '_blank')} >Ingresar</Button>
       </Card.Body>

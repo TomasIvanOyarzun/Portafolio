@@ -8,10 +8,10 @@ const initialState = JSON.parse(localStorage.getItem('bg'))
 
  export const SwitchProvider = ({children}) => {
     const theme = {
-        about: '#525252',
-        contact : '#3d3d3d',
-        project : '#464646',
-        service : '#7c7c7c',
+        about: '#e0e0e0',
+        contact : '#e0e0e0',
+        project : '#757575',
+        service : '#757575',
         card : 'secondary'
     }
     const [active, setActive] = useState(initialState)

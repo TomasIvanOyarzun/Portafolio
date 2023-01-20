@@ -63,7 +63,7 @@ const Contact = () => {
     <div id='contact' className={style.container} style={{background: active && theme.contact}}>
     
        <h1>CONTACT</h1>
-       <div style={{width: '11%' , height:'4px', background: 'rgb(247, 185, 71)', marginBottom: '20px'}}></div>
+       <div style={{width: '11%' , height:'4px', background: 'rgb(247, 185, 71)', marginBottom: '20px', color: '#fff'}}></div>
        <div className={style.sub_container}>
        <div className={style.sub_container_one_v2}>
         <div className={style.sub_container_one}>

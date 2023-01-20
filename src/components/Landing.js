@@ -15,14 +15,13 @@ const Landing = () => {
        <div className={style.sub_container}>
        
             <h5>Hola mi nombre es</h5>
-            <h2 style={{color: 'rgb(233, 48, 48)'}}>{`<Tomas Oyarzun/>`}</h2> 
+            <h2 style={{color: 'rgb(233, 48, 48)', fontWeight: '1000'}}>{`<Tomas Oyarzun/>`}</h2> 
             
-            <div>
-            <h2 className={style.escribiendo}>Soy
+            <div >
+            <h5 className={style.escribiendo}>Soy
 Full Stack Developer
-</h2> 
+</h5> 
             </div>
-            
            
        </div>
     </div>

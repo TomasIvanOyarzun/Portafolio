@@ -91,6 +91,46 @@
     
   }
  
+  .escribiendo {
+    position: relative;
+    animation: escribiendo 4s steps(28) ;
+    overflow: hidden;
+    white-space: nowrap;
+    width: max-content
+  }
+  
+  @keyframes escribiendo {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .escribiendo::after {
+    content: "";
+  
+    border-right: 4px solid #fff;
+    animation: parpadeo 1s linear infinite;
+    position: absolute;
+    right: 0;
+    width: 0; 
+    height:100%; 
+  }
+  
+  @keyframes parpadeo {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
 @media screen and (max-width: 960px) {
     .container {
         
@@ -135,43 +175,12 @@
     
   }
 
+  .escribiendo {
+    font-size: 14px; /*reduciendo el tamaño del texto*/
+  }
+  .escribiendo::after {
+    border-width: 1px; /*reduciendo el ancho de la linea*/
+  }
+
 }
 
-.escribiendo {
-  position: relative;
-  animation: escribiendo 4s steps(28) ;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-@keyframes escribiendo {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-.escribiendo::after {
-  content: "";
-
-  border-right: 4px solid #fff;
-  animation: parpadeo 1s linear infinite;
-  position: absolute;
-  right: 0;
-  width: 0; 
-  height:100%; 
-}
-
-@keyframes parpadeo {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
