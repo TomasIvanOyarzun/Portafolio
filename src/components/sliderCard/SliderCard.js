@@ -5,7 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 import portafolio from '../../image/portafolio.jpg'
 import cellStore from '../../image/cellStore.jpg'
 import pokemon from '../../image/pokemonApp.jpg'
-import dog from '../../image/dog.jpg'
+import dog from '../../image/dog.png'
 import tresBien from '../../image/tresBien.jpg'
 const arrayCard = [{title: 'Tres Bien E-commerce', image: tresBien, description: 'Ecommerce indumentaria, react , node, typescript, mongoose, Auth0 2.0, Material UI', link : 'https://tresbien.vercel.app/'},{title: 'Portafolio', image: portafolio, description : 'Portafolio personal de programador, React, Bootstrap components, deployado en Netlify'  },
 {title: 'CellStore', image: cellStore, description : 'Proyecto grupal , ecommerce celulares, react, react-redux, mongoose, mongoDB, express, JWT, etc', link : 'https://cellstore-c94xwe73i-tomasivanoyarzun.vercel.app/'},
