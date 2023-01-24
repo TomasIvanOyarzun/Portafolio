@@ -8,7 +8,7 @@
 <ul>
   <li>Javascript ✔️</li>
    <li>React ✔️</li>
-   <li>Boostrap ✔️</li>
+   <li>Bootstrap ✔️</li>
    <li>three.js ✔️</li>
    
   </ul>
