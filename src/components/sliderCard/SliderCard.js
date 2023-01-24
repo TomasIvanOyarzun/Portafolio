@@ -10,7 +10,7 @@ import tresBien from '../../image/tresBien.jpg'
 const arrayCard = [{title: 'Tres Bien E-commerce', image: tresBien, description: 'Ecommerce indumentaria, react , node, typescript, mongoose, Auth0 2.0, Material UI', link : 'https://tresbien.vercel.app/'},{title: 'Portafolio', image: portafolio, description : 'Portafolio personal de programador, React, Bootstrap components, deployado en Netlify'  },
 {title: 'CellStore', image: cellStore, description : 'Proyecto grupal , ecommerce celulares, react, react-redux, mongoose, mongoDB, express, JWT, etc', link : 'https://cellstore-c94xwe73i-tomasivanoyarzun.vercel.app/'},
 {title:'Pokemon APP', image: pokemon, description: 'pokedex , buscar pokemones, react , express, sequelize, postgres  (no se uso librerias de estilos)'},
-{title: 'Dog APP', image: dog, description : 'buscar razas de perro , react, react-redux, react-router-dom, sequelize, express, (no se uso librerias de estilos)', link: 'https://github.com/TomasIvanOyarzun/PiDogs'}]
+{title: 'FetchDog', image: dog, description : 'buscar razas de perro , react, react-redux, react-router-dom, sequelize, express, (no se uso librerias de estilos)', link: 'https://front-dog-app.vercel.app/'}]
 
 const SliderCard = () => {
 
