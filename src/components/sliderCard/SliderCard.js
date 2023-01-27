@@ -4,13 +4,13 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import portafolio from '../../image/portafolio.jpg'
 import cellStore from '../../image/cellStore.jpg'
-import pokemon from '../../image/pokemonApp.jpg'
 import dog from '../../image/dog.png'
 import tresBien from '../../image/tresBien.jpg'
-const arrayCard = [{title: 'Tres Bien E-commerce', image: tresBien, description: 'Ecommerce indumentaria, react , node, typescript, mongoose, Auth0 2.0, Material UI', link : 'https://tresbien.vercel.app/'},{title: 'Portafolio', image: portafolio, description : 'Portafolio personal de programador, React, Bootstrap components, deployado en Netlify'  },
-{title: 'CellStore', image: cellStore, description : 'Proyecto grupal , ecommerce celulares, react, react-redux, mongoose, mongoDB, express, JWT, etc', link : 'https://cellstore-c94xwe73i-tomasivanoyarzun.vercel.app/'},
-{title:'Pokemon APP', image: pokemon, description: 'pokedex , buscar pokemones, react , express, sequelize, postgres  (no se uso librerias de estilos)'},
-{title: 'FetchDog', image: dog, description : 'buscar razas de perro , react, react-redux, react-router-dom, sequelize, express, (no se uso librerias de estilos)', link: 'https://front-dog-app.vercel.app/'}]
+
+import styles from './SliderCard.module.css'
+const arrayCard = [{title: 'Tres Bien E-commerce', image: tresBien, description: 'Ecommerce indumentaria, metodologia utilizada Scrum.', tecnologia : ['react' , 'node', 'typescript', 'mongoose',' Auth0 2.0', 'Material UI'], link : 'https://tresbien.vercel.app/'},{title: 'Portafolio', image: portafolio, description : 'Portafolio personal de programador, deployado en Netlify' , tecnologia: [ 'React', 'Bootstrap', 'Three.js', 'Aos', 'emailJs'] },
+{title: 'CellStore', image: cellStore, description : 'Proyecto grupal , ecommerce celulares, metodologia utilizada Scrum.', tecnologia: ['react', 'react-redux',' mongoose', 'mongoDB',' express', 'JWT'], link : 'https://cellstore-c94xwe73i-tomasivanoyarzun.vercel.app/'},
+{title: 'FetchDog', image: dog, description : 'App de razas de perro,  deployado en vercel y render ', tecnologia: [ 'react-typescript', 'redux toolkit', 'react-router-dom', 'mongoose', 'JWT', 'Material UI'], link: 'https://front-dog-app.vercel.app/'}]
 
 const SliderCard = () => {
 
@@ -37,14 +37,15 @@ const SliderCard = () => {
 
      
   return (
-    <div>
-      <Carousel responsive={responsive} infinite={true} autoPlaySpeed={1000}>
+    <div className={styles.card}>
+      <Carousel responsive={responsive} infinite={true} autoPlaySpeed={1000}  >
          {arrayCard.map((el,index) => {
             return (
                 <Card key={index} title={el.title}
                  image= {el.image}
                  description = {el.description}
                  link = {el.link}
+                 tecnologia = {el.tecnologia}
                 />
             )
          })}

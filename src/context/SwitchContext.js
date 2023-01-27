@@ -8,18 +8,24 @@ const initialState = JSON.parse(localStorage.getItem('bg'))
 
  export const SwitchProvider = ({children}) => {
     const theme = {
-        about: '#e0e0e0',
+        about: '#2B2934',
         contact : '#e0e0e0',
-        project : '#757575',
-        service : '#757575',
-        card : 'secondary'
+        project : '#2B2934',
+        service : '#2B2934',
+        card : 'dark'
     }
     const [active, setActive] = useState(initialState)
       
  
 
-    const handleOnClick = () => {
-        setActive(!active)
+    const handleOnClick = (e) => {
+        if(e.target.id === 'light') {
+            setActive(false)
+        }
+        
+        if(e.target.id === 'dark') {
+            setActive(true)
+        }
        
     }
     

@@ -13,13 +13,13 @@ import logo from '../image/logo.png'
 const NavB = () => {
 
   const {active, handleOnClick, theme} = useContext(SwitchContext)
-   console.log(theme)
+   console.log(active)
   return (
   
 
    <div className={style.nav}>
-    <Navbar  bg={active ? 'dark' : 'light'} expand="lg" variant={active && 'dark'} style={{backgroundImage: 'url '}}>
-    <Container fluid>
+    <Navbar  bg={active ? 'dark' : 'light'} expand="lg" variant={active && 'dark'} style={{backgroundColor: 'transparent'}}>
+    <Container >
       <Navbar.Brand href="#">
       <img
               alt=""
@@ -33,41 +33,45 @@ const NavB = () => {
       <Navbar.Collapse id="navbarScroll">
         <Nav
           className="me-auto my-2 my-lg-0"
-          style={{ maxHeight: '100px' }}
-          navbarScroll
+          style={{ maxHeight: '100%' }}
+          
         >
           <Nav.Link href="#inicio">Inicio</Nav.Link>
+          <Nav.Link href="#service">Service</Nav.Link>
+          <Nav.Link href="#about">About</Nav.Link>
           <Nav.Link href="#contact">Contact</Nav.Link>
-          <NavDropdown title="Links" id="navbarScrollingDropdown">
-            <NavDropdown.Item href="#service">Service</NavDropdown.Item>
-            <NavDropdown.Item href="#about">
-              About me
-            </NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#project">
-              Projects
-            </NavDropdown.Item>
+          <Nav.Link href="#project">Projects</Nav.Link>
           
-          </NavDropdown>
-          <Nav.Link href="#contact">{'oyarzuntomas99@gmail.com'.toLowerCase()}</Nav.Link>
+          
+         
+         
           
       
         </Nav>
-        <Nav>
+        <Nav 
+
+          style={{ maxHeight: '100%' }}  >
+
+<Nav.Link ><i class="bi bi-github"></i></Nav.Link>
+<Nav.Link ><i class="bi bi-linkedin"></i></Nav.Link>
+         {active ?  <Nav.Link href="#inicio"><i class="bi bi-moon-stars-fill"></i></Nav.Link>  : <Nav.Link href="#contact"><i class="bi bi-brightness-high-fill"></i></Nav.Link> 
+         
+         }
+        <NavDropdown  id="navbarScrollingDropdown">
+            <NavDropdown.Item  >Service</NavDropdown.Item>
+            <NavDropdown.Item id='light' onClick={handleOnClick}>
+            <i  class="bi bi-brightness-high-fill"></i>
+             light
+            </NavDropdown.Item>
            
-            <Form>
-            <Form.Check
-            isValid={true}
-            
-        type="switch"
-        checked={active ? true : false}
-        id="custom-switch"
-        label="DarkMode"
-        onClick={handleOnClick}
-        color='light'
-      />
-    
-    </Form>
+            <NavDropdown.Item id='dark' onClick={handleOnClick}>
+            <i class="bi bi-moon-stars-fill"></i>
+              Dark
+            </NavDropdown.Item>
+          
+          </NavDropdown>
+      
+           
            
           </Nav>
       </Navbar.Collapse>

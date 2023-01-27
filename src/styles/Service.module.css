@@ -25,7 +25,19 @@
    margin-top: 20px;
 }
 
+.sub_div_dark {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 70%;
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+   border-radius: 4px;
+   margin-top: 20px;
+}
+
 .sub_div div {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +54,7 @@
 
 .sub_div p {
     font-size: 30px;
-    color : rgb(247, 185, 71);
+    color : rgba(71, 203, 247, 0.833);
 }
 .sub_div span {
   font-weight: 300;
@@ -70,7 +82,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 90%;
         height: 80%;
         
        

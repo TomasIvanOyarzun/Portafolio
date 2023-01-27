@@ -13,6 +13,7 @@ import Toast from 'react-bootstrap/Toast';
 import Form from 'react-bootstrap/Form';
 import { useContext } from 'react';
 import SwitchContext from '../context/SwitchContext';
+import { Container } from 'react-bootstrap';
 
 const Contact = () => {
   const [msg, setMsg] = useState(false);
@@ -62,8 +63,10 @@ const Contact = () => {
     
     <div id='contact' className={style.container} style={{background: active && theme.contact}}>
     
+       <Container>
+        <div className={style.container_under_container}>
        <h1>CONTACT</h1>
-       <div style={{width: '11%' , height:'4px', background: 'rgb(247, 185, 71)', marginBottom: '20px', color: '#fff'}}></div>
+       <div style={{width: '11%' , height:'4px', background: '#2390BF', marginBottom: '20px', color: '#fff'}}></div>
        <div className={style.sub_container}>
        <div className={style.sub_container_one_v2}>
         <div className={style.sub_container_one}>
@@ -77,7 +80,7 @@ const Contact = () => {
            <div><a href='https://wa.me/+5491133526366' rel="noreferrer" target="_blank"><img data-aos="zoom-in-left" src={wsp} alt='whatsapp_logo'></img></a></div>
            </div>
            
-           <Button style={{background : '#E7BA13', border : 0}} variant="primary" onClick={handleShow}>
+           <Button style={{background : '#2390BF', border : 0}} variant="primary" onClick={handleShow}>
         Descargar mi CV
       </Button>
            
@@ -151,7 +154,8 @@ const Contact = () => {
        <Toast.Body>Gracias , estare contestando a la brevedad</Toast.Body>
      </Toast>
     </div>
-       
+    </div>
+       </Container>
     
    
     </div>

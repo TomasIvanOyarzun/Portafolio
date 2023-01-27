@@ -2,11 +2,11 @@
 
 .nav {
     position: fixed;
-  
+    background-color: transparent;
    
     width: 100%;
     
- 
+   color: #fff;
    
   
    z-index: 99999999;
