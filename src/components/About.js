@@ -40,11 +40,11 @@ const About = () => {
           <img height='30%'  src={face} className={style.img}></img>
         </div>
 
-        <div style={{width: '70%'}}>
+        <div style={{width: '100%'}}>
        
-         <p className={style.div_p} data-aos="flip-left" >Soy desarrollador web Full-Stack JS, sigo aprendiendo nuevas tecnologías,
-             Me gusta mucho  el Front-End como el Back-End, cada día aprendo
-              algo nuevo, para que me ayude en mi desarrollo como programador</p>
+         <p className={style.div_p} data-aos="flip-left" >Soy <strong>desarrollador web Full-Stack JS</strong>,
+         , estoy constantemente comprometido con mi aprendizaje y evolución en el campo de la tecnología. Mi afinidad por ambos aspectos del desarrollo web, tanto Front-End como Back-End,
+         actualmente sigo aprendiendo nuevas tecnologías, para poder agrandar mi stack, con el objetivo a que me ayude en mi desarrollo como programador.</p>
         </div>
       </div>
 

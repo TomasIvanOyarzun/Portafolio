@@ -14,16 +14,18 @@ import ThreeShow from './components/ThreeShow';
 
 
 function App() {
- 
+  
+  const dispositivo = navigator.userAgent || navigator.vendor || window.opera;
   
   return (
      <SwitchProvider>
      
       <NavB/>
-     
+       
       <Banner/>
       <Service/>
-      <ThreeShow/>
+      { !/android/i.test(dispositivo) &&  <ThreeShow/>}
+      
       <About/>
       <Project/>
       <Contact/>
