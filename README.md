@@ -3,7 +3,7 @@
 <h2> My portfolio</h2>
 
 <img width='100%' src="https://github.com/TomasIvanOyarzun/Portafolio/blob/main/src/image/portafolio.png"/>
- <h4>👨🏻‍💻 Tecnologias utilizadas </h4>
+ <h4>👨🏻‍💻 used technologies </h4>
 
 <ul>
   <li>Javascript ✔️</li>
