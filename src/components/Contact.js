@@ -61,7 +61,7 @@ const Contact = () => {
     <>
     
     
-    <div id='contact' className={style.container} style={{background: active && theme.contact}}>
+    <div id='contact' className={style.container} style={{background: active && theme.contact, color: active && '#FFF'}}>
     
        <Container>
         <div className={style.container_under_container}>
@@ -111,7 +111,7 @@ const Contact = () => {
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Nombre</Form.Label>
         <Form.Control type='text' placeholder='Su nombre' name='user_name' onChange={handleOnClick} value={input.user_name} />
-        <Form.Text className="text-muted">
+        <Form.Text  className={active ? 'text-light' : 'text-secondary'}>
          Ingrese su nombre completo.
         </Form.Text>
       </Form.Group>
@@ -119,7 +119,7 @@ const Contact = () => {
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email</Form.Label>
         <Form.Control type='text' placeholder='Su email'  name='user_email' onChange={handleOnClick} value={input.user_email} />
-        <Form.Text className="text-muted">
+        <Form.Text className={active ? 'text-light' : 'text-secondary'}>
           verifique que este bién escríto, gracías.
         </Form.Text>
         
@@ -127,10 +127,10 @@ const Contact = () => {
 
 
 
-      <textarea style={{marginBottom: '30px', height: '20%', width: '100%'}} placeholder='message' name='user_message' onChange={handleOnClick} value={input.user_message}></textarea>
+      <textarea style={{marginBottom: '30px', height: '20%', width: '100%', maxHeight: '150px'}} placeholder='message' name='user_message' onChange={handleOnClick} value={input.user_message}></textarea>
 
       
-      <Button  disabled={Object.values(input).join('').length === 0 ? true : false} onClick={() => setMsg(true)} variant="primary" type="submit" class='w-100' >
+      <Button style={{background: '#2390BF' , border: 'none'}}  disabled={Object.values(input).join('').length === 0 ? true : false} onClick={() => setMsg(true)} variant="primary" type="submit" class='w-100' >
         Enviarme Correo
       </Button>
     </Form>

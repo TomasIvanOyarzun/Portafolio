@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import Box from './Box'
 import { OrbitControls, Stars } from '@react-three/drei'
 import {Canvas, extend} from '@react-three/fiber'
-import { Cloud, Effects, Sparkles } from '@react-three/drei'
+import { Effects, Sparkles } from '@react-three/drei'
 import {UnrealBloomPass} from 'three-stdlib'
 import SwitchContext from '../../context/SwitchContext'
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import Card from '../Card/CardProject'
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import portafolio from '../../image/portafolio.jpg'
+import Carousel from "react-multi-carousel"
+import "react-multi-carousel/lib/styles.css"
+import portafolio from '../../image/portafolio.png'
 import cellStore from '../../image/cellStore.jpg'
 import dog from '../../image/dog.png'
 import tresBien from '../../image/tresBien.jpg'

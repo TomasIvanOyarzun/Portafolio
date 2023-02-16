@@ -9,6 +9,7 @@ import { Container } from 'react-bootstrap';
 
 
 
+
 const Project = () => {
  const {active, theme} = useContext(SwitchContext)
     useEffect(()=> {
@@ -16,7 +17,9 @@ const Project = () => {
     },[])
   return (
     <section id='project' className={styles.container} style={{background: active && theme.project}}>
+      
     <Container>
+   
        <div className={active ? styles.sub_section_dark : styles.sub_section} >
     <h1 style={{fontSize: '50px', marginTop: '40px'}}>PROJECTs</h1>
     <div style={{width: '14%' , height:'4px', background: '#2390BF', marginBottom: '30px'}}></div>

@@ -1,7 +1,6 @@
 import React  from 'react'
 import style from '../styles/Nav.module.css'
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -12,7 +11,7 @@ import logo from '../image/logo.png'
 
 const NavB = () => {
 
-  const {active, handleOnClick, theme} = useContext(SwitchContext)
+  const {active, handleOnClick} = useContext(SwitchContext)
    console.log(active)
   return (
   
@@ -52,20 +51,20 @@ const NavB = () => {
 
           style={{ maxHeight: '100%' }}  >
 
-<Nav.Link ><i class="bi bi-github"></i></Nav.Link>
-<Nav.Link ><i class="bi bi-linkedin"></i></Nav.Link>
+<Nav.Link href='https://github.com/TomasIvanOyarzun' rel="noreferrer" target="_blank" ><i class="bi bi-github"></i></Nav.Link>
+<Nav.Link href='https://www.linkedin.com/in/tomas-ivan-oyarzun-148263211/' rel="noreferrer" target="_blank" ><i class="bi bi-linkedin"/></Nav.Link>
          {active ?  <Nav.Link href="#inicio"><i class="bi bi-moon-stars-fill"></i></Nav.Link>  : <Nav.Link href="#contact"><i class="bi bi-brightness-high-fill"></i></Nav.Link> 
          
          }
         <NavDropdown  id="navbarScrollingDropdown">
-            <NavDropdown.Item  >Service</NavDropdown.Item>
+            <NavDropdown.Item  >Aspect : <strong>{active ? 'dark' : 'light'}</strong></NavDropdown.Item>
             <NavDropdown.Item id='light' onClick={handleOnClick}>
             <i  class="bi bi-brightness-high-fill"></i>
              light
             </NavDropdown.Item>
            
-            <NavDropdown.Item id='dark' onClick={handleOnClick}>
-            <i class="bi bi-moon-stars-fill"></i>
+            <NavDropdown.Item id='dark'  onClick={handleOnClick}>
+            <i  class="bi bi-moon-stars-fill"></i>
               Dark
             </NavDropdown.Item>
           

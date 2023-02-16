@@ -5,7 +5,7 @@ import ideas from '../image/ideas.png'
 import dev from '../image/desarrollo.png'
 import SwitchContext from '../context/SwitchContext'
 import AOS from 'aos'
-import Three from './three/Three'
+
 const Service = () => {
 
    const {active, theme} = useContext(SwitchContext)
@@ -16,8 +16,12 @@ const Service = () => {
     },[])
 
   return (
+   <>
+ 
+   <div className="particlesheader" >
     <div id='service'  className={style.container} style={{background: active && theme.service}}>
-   
+        
+      
         <h2 style={{color : active && '#FFF'}}>Service</h2>
         <div style={{width: '10%' , height:'4px', background: '#2390BF'}}></div>
       <div  className={style.sub_div}>
@@ -39,7 +43,9 @@ const Service = () => {
             <span style={{color : active && '#FFF'}}>Habilidad desarrollo web de flujo completo, capacidad de aprender nuevas tecnologías solicitadas. </span>
          </div>
       </div>
+      </div>
     </div>
+    </>
   )
 }
 

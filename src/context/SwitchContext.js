@@ -9,7 +9,7 @@ const initialState = JSON.parse(localStorage.getItem('bg'))
  export const SwitchProvider = ({children}) => {
     const theme = {
         about: '#2B2934',
-        contact : '#e0e0e0',
+        contact : '#4C597F',
         project : '#2B2934',
         service : '#2B2934',
         card : 'dark'

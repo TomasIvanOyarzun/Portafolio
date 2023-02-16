@@ -1,4 +1,4 @@
-import { Container, Row , Col, Button } from 'react-bootstrap'
+import { Container, Row , Col } from 'react-bootstrap'
 import astronauta from '../assets/img/astronauta.png'
 const Banner = () => {
 
@@ -20,7 +20,7 @@ const Banner = () => {
                   programación. Tengo una gran capacidad de aprendizaje y siempre estoy dispuesto a enfrentar nuevos
                    desafíos y mejorar mis habilidades para cumplir con las expectativas del mercado.
                 </p>
-                <button className="button"><span style={{marginRight: '10px'}}>Let’s Connect</span> <i class="bi bi-arrow-down-circle-fill"></i></button>
+                <a style={{textDecoration: 'none'}} href='#service'><button  className="button"><span style={{marginRight: '10px'}}>Let’s Connect</span> <i class="bi bi-arrow-down-circle-fill"></i></button></a>
             </Col>
             <Col xs={12} md={6} xl={5} >
                 <img width='100%' src={astronauta} alt='astronauta-img' />

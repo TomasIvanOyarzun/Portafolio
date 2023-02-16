@@ -15,9 +15,10 @@ import typeScript from '../image/typeScript.png'
 import { useContext } from 'react';
 import SwitchContext from '../context/SwitchContext';
 import face from '../image/face.png'
-import Three from './three/Three';
 
-import { Container, Row , Col, Button } from 'react-bootstrap'
+
+import { Container, Col } from 'react-bootstrap'
+
 const About = () => {
     
   const {active , theme} = useContext(SwitchContext)
@@ -26,7 +27,10 @@ const About = () => {
       
       },[])
   return (
+    
+    
     <div id='about' className={style.container} style={{background: active && theme.about}}>
+      
         <Container>
          <Col xs={12} md={12} xl={12}>
           <div className={active ? style.sub_container_dark : style.sub_container}>
@@ -37,7 +41,7 @@ const About = () => {
       
       <div className={style.container_one}>
         <div >
-          <img height='30%'  src={face} className={style.img}></img>
+          <img height='30%'  src={face} className={style.img} alt='my-face'></img>
         </div>
 
         <div style={{width: '100%'}}>
@@ -54,7 +58,7 @@ const About = () => {
           {[{name: 'JavaScript', img: js},{name: 'Html', img: html},{name: 'Css', img: css},{name : 'React', img: react},{name: 'Redux', img : redux}]
            .map(el => (
             <div data-aos="flip-left" className={style.containers}>
-            <img className={active ? style.filter  : style.noFilter } src={el.img}></img>
+            <img className={active ? style.filter  : style.noFilter } src={el.img} alt={el.name}></img>
             <div className={style.container_name}><p>{el.name}</p></div>
             
            </div>
@@ -68,7 +72,7 @@ const About = () => {
           {[{name: 'Node.js', img: node},{name: 'Sequelize', img: sequelize},{name: 'Mongoose', img: mongo},{name : 'Postgres', img: postgres},{name: 'TypeScript', img : typeScript}]
           .map(el => (
             <div data-aos="flip-right" className={style.containers} >
-            <img className={active ? style.filter  : style.noFilter } src={el.img}></img>
+            <img className={active ? style.filter  : style.noFilter } src={el.img} alt={el.name}/>
            <div className={style.container_name}><p>{el.name}</p></div>
            </div>
           ))}
@@ -80,6 +84,7 @@ const About = () => {
 
       </Container>
     </div>
+    
   )
 }
 
