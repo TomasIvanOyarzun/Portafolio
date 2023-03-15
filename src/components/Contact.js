@@ -94,7 +94,7 @@ const Contact = () => {
           <Button variant="secondary" onClick={handleClose}>
             Cerrar
           </Button>
-          <a href='https://drive.google.com/file/d/1Z9aa4ZEj2bb_rhA86bgMMlDnzKj4pw4j/view' rel="noreferrer" target="_blank"><Button variant="primary" onClick={handleClose}>
+          <a href='https://docs.google.com/document/d/1G6LZIbyR5KYjz_Nqm4p7ZHekIzgdaRJBuR42ogzfP8Q/edit?usp=share_link' rel="noreferrer" target="_blank"><Button variant="primary" onClick={handleClose}>
             Ver
           </Button></a>
         </Modal.Footer>
